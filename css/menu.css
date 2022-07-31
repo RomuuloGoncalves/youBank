@@ -1,0 +1,77 @@
+#logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+}
+
+ul{
+        width: max-content;
+}
+#hamburger{
+        color: white;
+}
+
+
+#btn-mobile {
+        display: none;
+}
+
+@media (max-width: 800px) {
+        #menu {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                width: 100%;
+                top: 70px;
+                right: 0px;
+                background: black;
+                transition: 0.6s;
+                z-index: 1000;
+                height: 0px;
+                visibility: hidden;
+                overflow-y: hidden;
+                gap: 20px;
+        }
+
+        #nav.active #menu {
+                height: calc(100vh - 70px);
+                visibility: visible;
+                overflow-y: auto;
+        }
+        #menu a {
+                border: 2px solid white;
+        }
+        #btn-mobile {
+                display: flex;
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+                border: none;
+                background: none;
+                cursor: pointer;
+                gap: 0.5rem;
+        }
+        #hamburger {
+                border-top: 2px solid;
+                width: 20px;
+        }
+        #hamburger::after,
+        #hamburger::before {
+                content: "";
+                display: block;
+                width: 20px;
+                height: 2px;
+                background: currentColor;
+                margin-top: 5px;
+                transition: 0.3s;
+                position: relative;
+        }
+        #nav.active #hamburger {
+                border-top-color: transparent;
+        }
+        #nav.active #hamburger::before {
+                transform: rotate(135deg);
+        }
+        #nav.active #hamburger::after {
+                transform: rotate(-135deg);
+                top: -7px;
+        }
+}

@@ -1,0 +1,470 @@
+header {
+        height: 60px;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: black;
+        color: white;
+}
+
+.marca {
+        margin-left: 2%;
+        font-size: 20px;
+}
+
+#nav{
+        margin-right: 2%;
+}
+
+#nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+#nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+#nav ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+#nav button {
+        border: 0;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+#nav a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 18px;
+        padding: 5px 15px;
+        background-color: transparent;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white;
+}
+
+#nav a ion-icon {
+        font-size: 22px;
+        font-weight: 800;
+}
+
+#login a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+}
+
+/* section */
+section {
+        padding: 10px;
+        max-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: black;
+}
+
+.texto h1,
+.texto p {
+        color: white;
+}
+
+section .texto {
+        max-width: 550px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+
+.texto h1 {
+        font-size: 40px;
+}
+
+.texto p {
+        font-size: 20px;
+}
+
+section .imagem img {
+        height: 550px;
+}
+
+/* main */
+main {
+        height: max-content;
+        max-width: 100vw;
+        background-image: url("../image/imageBackground");
+        background-repeat: no-repeat;
+        background-size: cover;
+        outline: 0;
+        border: 0;
+}
+
+.container {
+        min-height: 100%;
+        max-width: 100vw;
+
+        background: rgba(255, 255, 255, 0.35);
+        backdrop-filter: blur(13px);
+        -webkit-backdrop-filter: blur(13px);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        padding: 30px 0;
+}
+
+.container .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+}
+
+.container .texto h1,
+.container .texto p {
+        text-align: center;
+}
+
+#p2 {
+        max-width: 500px;
+}
+
+.slide {
+        height: max-content;
+        width: 75vw;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: 20px 10px;
+}
+
+.slide img {
+        height: 50px;
+}
+
+.info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+}
+
+.slide ion-icon {
+        font-size: 50px;
+}
+
+#seta1 {
+        transform: rotateZ(180deg);
+}
+
+.info p,
+.info span {
+        text-align: center;
+}
+
+.info span {
+        font-weight: 600;
+}
+
+.cartao {
+        width: 78vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.cartao .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+}
+
+.cartao .texto h1,
+.cartao .texto p {
+        align-self: flex-start;
+        text-align: left;
+}
+
+.cartao .texto h1 {
+        font-size: 40px;
+}
+
+.cartao .texto p {
+        font-size: 20px;
+}
+
+.cartao .containerCartao {
+        width: 400px;
+        padding: 30px 20px;
+
+        background: rgba(176, 169, 169, 0.55);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+}
+
+.containerCartao h1 {
+        font-size: 40px;
+}
+
+#asterisco {
+        font-size: 20px;
+}
+
+#dadosUsuarioCartao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        font-size: 25px;
+}
+
+.containerCartao img {
+        height: 50px;
+}
+
+footer {
+        width: 100%;
+        background: white;
+}
+.main-content {
+        display: flex;
+}
+.main-content .box {
+        flex-basis: 50%;
+        padding: 10px 20px;
+}
+.box h2 {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+}
+.box .content {
+        margin: 20px 0 0 0;
+        position: relative;
+}
+.box .content:after {
+        position: absolute;
+        content: "";
+        width: 15%;
+        height: 2px;
+        background: #f12020;
+        top: -10px;
+}
+.box .content:before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: #1a1a1a;
+        top: -10px;
+}
+.left .content .social {
+        margin: 20px 0 0 0;
+}
+.left .content .social a {
+        padding: 0 2px;
+}
+.left .content .social a span {
+        width: 40px;
+        height: 40px;
+        background: #1a1a1a;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 5px;
+        font-size: 18px;
+        transition: 0.3s;
+}
+.left .content .social a span:hover {
+        background: #f12020;
+}
+.left .content p {
+        text-align: justify;
+}
+.center .content .fas {
+        font-size: 23px;
+        background: #1a1a1a;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        border-radius: 50%;
+        transition: 0.3s;
+        cursor: pointer;
+}
+.center .content .fas:hover {
+        background: #f12020;
+}
+.center .content .text {
+        font-size: 17px;
+        font-weight: 500;
+        padding-left: 10px;
+}
+.center .content .phone {
+        margin: 10px 0;
+}
+.center .content .msg {
+        margin-top: 10px;
+}
+.right form input,
+.right form textarea {
+        width: 100%;
+        font-size: 17px;
+        background: white;
+        padding-left: 10px;
+        border: 1px solid #222222;
+}
+.right form input {
+        height: 35px;
+}
+.right form input:focus,
+.right form textarea:focus {
+        outline-color: #3498db;
+}
+.right form .text {
+        font-size: 17px;
+        margin-bottom: 2px;
+        color: #656565;
+}
+.right form .btn {
+        margin-top: 10px;
+}
+.right form .btn button {
+        height: 40px;
+        width: 100%;
+        background: #f12020;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 0;
+}
+.right form .btn button:hover {
+        background: #000;
+        color: white;
+}
+
+.bottom .center {
+        padding: 5px;
+        font-size: 15px;
+        background: #151515;
+        text-align: center;
+}
+.bottom .center span {
+        color: #656565;
+}
+.bottom .center a {
+        color: #f12020;
+        text-decoration: none;
+}
+.bottom .center a:hover {
+        text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+        .main-content {
+                flex-wrap: wrap;
+                flex-direction: column;
+        }
+        .main-content .box {
+                margin: 5px 0;
+        }
+}
+
+@media (max-width: 800px) {
+        main .slide {
+                row-gap: 30px;
+                padding: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+        }
+
+        main .seta {
+                display: none;
+        }
+
+        .cartao {
+                width: 100vw;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+        }
+        .cartao .texto {
+                margin: 2%;
+        }
+        .cartao .containerCartao {
+                width: 310px;
+                margin-top: 15px;
+        }
+
+ 
+
+        .cadastro{
+                display: none;
+        }
+}
+
+@media (max-width: 600px) {
+        section .imagem img{
+                height: 400px ;
+        }
+}
+
+@media (max-width: 400px) {
+        section .imagem img{
+                height: 300px ;
+        }
+
+        section .texto h1{
+                font-size: 30px;
+        }
+}
+
+@media (max-width: 300px) {
+        .cartao .containerCartao {
+                width: 270px;
+                gap: 5px;
+                margin-top: 15px;
+        }
+}
+
+
+.erro {
+        border: 1px solid red;
+}
+/* animações */
+#nav a:hover {
+        background-color: white;
+        color: black;
+}
