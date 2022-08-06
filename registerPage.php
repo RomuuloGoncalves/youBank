@@ -17,23 +17,23 @@
                 </div>
 
                 <div class="divisao login">
-                        <form action="" method="post">
+                        <form action="cadastrar.php" method="post">
                                 <h1>Fazer cadastro</h1>
                                 <div class="campo">
                                         <label for="nome">Nome:</label>
-                                        <input type="text" id="nome">
+                                        <input type="text" id="nome" name="nome">
                                 </div>
                                 <div class="campo">
                                         <label for="cpf">CPF:</label>
-                                        <input type="text" id="cpf">
+                                        <input type="text" id="cpf" name="cpf">
                                 </div>
                                 <div class="campo">
                                         <label for="email">Email:</label>
-                                        <input type="text" id="email">
+                                        <input type="text" id="email" name="email">
                                 </div>
                                 <div class="campo">
                                         <label for="senha">Senha:</label>
-                                        <input type="text" id="senha">
+                                        <input type="text" id="senha" name="senha">
                                 </div>
                                 <button type="submit">Cadastre-se</button>
                                 <nav>

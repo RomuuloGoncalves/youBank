@@ -20,8 +20,8 @@
                                 <span id="hamburger"></span>
                         </button>
                         <ul id="menu" role="menu" class="cadastro">
-                                <li> <button id="login"><a href="./loginPage.html"><ion-icon name="person-outline"></ion-icon>fazer Login</a></button></li>
-                                <li><button id="cadastro"><a href="./registerPage.html"> Cadastre-se </a></button></li>
+                                <li> <button id="login"><a href="./loginPage.php"><ion-icon name="person-outline"></ion-icon>fazer Login</a></button></li>
+                                <li><button id="cadastro"><a href="./registerPage.php"> Cadastre-se </a></button></li>
                         </ul>
                 </nav>
         </header>

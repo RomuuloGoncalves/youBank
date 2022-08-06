@@ -74,6 +74,7 @@ header {
 section {
         padding: 10px;
         max-width: 100vw;
+        min-height: calc(100vh - 60px);
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -102,7 +103,7 @@ section .texto {
 }
 
 section .imagem img {
-        height: 550px;
+        height: 600px;
 }
 
 /* main */
@@ -154,7 +155,7 @@ main {
         display: flex;
         align-items: center;
         background-color: white;
-        padding: 20px 10px;
+        padding: 30px 20px;
 }
 
 .slide img {
@@ -448,6 +449,12 @@ footer {
 
         section .texto h1{
                 font-size: 30px;
+        }
+
+        .cartao .containerCartao {
+                min-width: 310px;
+                gap: 5px;
+                margin-top: 15px;
         }
 }
 

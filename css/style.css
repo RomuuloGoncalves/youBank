@@ -8,3 +8,7 @@ body{
         max-width: 100vw;
         min-height: 100vh;
 }
+
+.erro{
+        border: 1px solid red;
+}
