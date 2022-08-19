@@ -30,4 +30,24 @@
                 return true;
         }
         }
+
+        function verificaVazio($dados){
+                $erro = false;
+                if(isset($dados) || empty($dados)){
+                        $erro = "<p style= 'color: black; height: 0px'>".true."</p>";
+                }else{
+                        foreach($dados as $indice => $valor){
+                        $valor = trim(strip_tags(($valor)));
+                        if(!$erro && empty($dados[$indice])){
+                                $erro .= "Campo $indice vazio <br>";
+                        }
+                }
+        }
+
+                if(!$erro){
+                        return true;
+                }else{
+                        return false;
+                }
+        }
 ?>

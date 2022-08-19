@@ -23,6 +23,15 @@ if (empty($_POST) || !isset($_POST)) {
         if (!$erro && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 $erro .= "<li> Envie o seu E-mail em um formato válido. Exemplo: usuario@gmail.com </li>";
         }
+
+        $sqlVerificaEmail = "SELECT * FROM  pessoa WHERE email = :email";
+        $verificaEmail = $conn -> prepare($sqlVerificaEmail);
+        $verificaEmail->bindValue(":email", $email);
+        $verificaEmail->execute();
+
+        if (!$erro && $verificaEmail -> rowCount() > 0) {
+                $erro = "Este e-mail já está sendo usado";
+        }
 }
 
 if ($erro) {

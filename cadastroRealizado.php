@@ -12,7 +12,7 @@
                 <div class="container">
                         <h1>Cadastro realizado</h1>
                         <nav>
-                                <button><a href="./dashBoardPage.php">Voltar</a></button>
+                                <button><a href="./loginPage.php">Voltar</a></button>
                         </nav>
                 </div>
         </body>

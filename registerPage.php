@@ -37,7 +37,7 @@
                                 </div>
                                 <button type="submit">Cadastre-se</button>
                                 <nav>
-                                        <a href="./index.html">Voltar à página inicial</a>
+                                        <a href="./index.php">Voltar à página inicial</a>
                                 </nav>
                         </form>
 
