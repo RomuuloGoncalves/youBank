@@ -1,81 +1,310 @@
-*{
-        color: white;
+* {
+	color: white;
 }
 
-body{
-        max-width: 100vw;
-        min-height: 100vh;
-        background-color: black;
+body {
+	max-width: 100vw;
+	min-height: 100vh;
+	background-color: black;
 }
 
-header{
-        height: 60px;
-        display: flex;
-        justify-content: space-between;
-        padding: 0 10px;
+header {
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
 }
 
-section{
-        height: 100px;
-        display: flex;
-        align-items: center;
-        padding: 0 10px;
-        font-size: 20px;
+.perfil {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-main{
-        height: calc(80vh - 60px);
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 50px;
-        padding: 20px;
+#welcome {
+	padding: 20px;
 }
 
-.divContainer{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+section {
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+	font-size: 20px;
 }
 
-.divContainer div{
-        background-color: white;
-        border-radius: 10px;
+main {
+	height: calc(80vh - 60px);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 40px;
+	padding: 20px;
 }
 
-.divContainer p, .divContainer h2{
-        color: black;
+.divContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
-.meuSaldo{
-        flex: 2 1 auto;
+.divContainer div {
+	background-color: white;
+	border-radius: 10px;
 }
 
-.estatistica{
-        flex: 2 1 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+.divContainer p,
+.divContainer h2 {
+	color: black;
 }
 
-.estatistica p{
-        margin-left: 20px;
-        font-size: 18px;
+.meuSaldo {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex: 2 1 auto;
 }
 
-.estatistica img{
-        justify-self: center;
-        align-self: center;
-        max-width: 90%;
+.meuSaldo p {
+	font-size: 20px;
+	margin-top: 10px;
 }
 
-
-.pagamentosRealizados{
-        flex: 2 1 auto;
+.meuSaldo h2 {
+	margin: 0 auto;
+	font-size: 30px;
+	margin-top: 20px;
 }
 
-.suasFaturas{
-        flex: 1 1 auto;
-
+.meuSaldo span {
+	background-color: #1e1e1e;
+	margin-top: auto;
+	height: 40px;
+	padding: 10px;
+	font-size: 18px;
 }
 
+.meuSaldo :where(p, h2) {
+	margin-left: 15px;
+}
 
+.estatistica {
+	flex: 2 1 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.estatistica p {
+	margin-left: 20px;
+	font-size: 18px;
+}
+
+.estatistica img {
+	justify-self: center;
+	align-self: center;
+	max-width: 90%;
+}
+
+.pagamentosRealizados {
+	flex: 2 1 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	overflow-y: scroll;
+}
+
+.pagamentosRealizados p {
+	align-self: flex-start;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-weight: 600;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.infos {
+	height: 60px;
+	font-size: 16px;
+	border-radius: 20px;
+	width: 90%;
+	background-color: black;
+}
+
+.infos span {
+	margin-left: auto;
+}
+
+.suasFaturas {
+	flex: 1 1 auto;
+}
+
+.divContainer3 {
+	background-color: #1e1e1e;
+	border-radius: 10px;
+	overflow-y: auto;
+}
+
+.divContainer3 p {
+	color: white;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-weight: 600;
+}
+
+.cartao {
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 8px;
+	align-items: center;
+	background-color: red;
+	background-color: #1e1e1e !important;
+	width: max-content;
+}
+
+.imagemCartao {
+	background-color: #1e1e1e !important;
+	width: max-content;
+	width: 90%;
+}
+
+.cartao .containerCartao {
+	width: 380px;
+	padding: 30px 20px;
+
+	background: rgba(176, 169, 169, 0.55);
+	backdrop-filter: blur(0px);
+	-webkit-backdrop-filter: blur(0px);
+	border-radius: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	background-color: grey;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 20px;
+}
+
+.containerCartao h1 {
+	font-size: 40px;
+}
+
+#asterisco {
+	font-size: 20px;
+}
+
+#dadosUsuarioCartao {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+
+	font-size: 25px;
+}
+
+.containerCartao img {
+	height: 50px;
+}
+
+@media (max-width: 800px) {
+
+
+
+	.meuSaldo {
+		height: 20vh;
+	}
+	body {
+		min-height: 100vh;
+	}
+	main {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		padding: 20px;
+	}
+
+	.pagamentosRealizados {
+		overflow-y: scroll;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.main-content {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.main-content .box {
+		margin: 5px 0;
+	}
+}
+
+@media (max-width: 800px) {
+	* {
+		display: block;
+	}
+
+        .pagamentosRealizados, .estatistica{
+                padding: 20px;
+        }
+	main .slide {
+		row-gap: 30px;
+		padding: 10px;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	main .seta {
+		display: none;
+	}
+
+	.cartao {
+		width: 100vw !important;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.cartao .texto {
+		margin: 2%;
+	}
+	.cartao .containerCartao {
+		width: 310px;
+		margin-top: 15px;
+	}
+
+	.cadastro {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	section .imagem img {
+		height: 400px;
+	}
+}
+
+@media (max-width: 400px) {
+	section .imagem img {
+		height: 300px;
+	}
+
+	section .texto h1 {
+		font-size: 30px;
+	}
+
+	.cartao .containerCartao {
+		min-width: 310px;
+		gap: 5px;
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 300px) {
+	.cartao .containerCartao {
+		width: 270px;
+		gap: 5px;
+		margin-top: 15px;
+	}
+}

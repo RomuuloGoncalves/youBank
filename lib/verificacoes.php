@@ -50,4 +50,16 @@
                         return false;
                 }
         }
+
+
+        function validaData($dtnasc){
+                $arrayDate = explode("-" ,$dtnasc);
+                if(checkdate($arrayDate[1], $arrayDate[2], $arrayDate[0])){
+                    return true;
+                }
+                else{
+                        return false;
+                }
+            }
+      
 ?>

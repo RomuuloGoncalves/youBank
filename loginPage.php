@@ -42,11 +42,12 @@ require "./lib/verificacoes.php";
                                                 $result_usuario -> bindParam(":email", $dados["email"]);
                                                 $result_usuario -> bindParam(":senha", $dados["senha"]);
                                                 $result_usuario -> execute();
+                                                $pessoa = $result_usuario -> fetch(PDO::FETCH_OBJ);
                                         
                                                 if($result_usuario  && ($result_usuario -> rowCount() != 0)){
                                                         // $row_usuario = $result_usuario -> fetch(PDO::FETCH_ASSOC);
                                                         ?>
-                                                        <meta http-equiv="refresh" content="0; url=dashBoardPage.html">
+                                                        <meta http-equiv="refresh" content="0; url=dashBoardPage.php?id=<?=$pessoa->id?>" >
                                                         <?php
                                                 }else{
                                                         $_SESSION['msg'] = "ERRO: Usuário ou senha inválida";

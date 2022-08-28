@@ -28,6 +28,10 @@
                                         <input type="text" id="cpf" name="cpf">
                                 </div>
                                 <div class="campo">
+                                        <label for="dataNasc">Data de Nascimento:</label>
+                                        <input type="date" name="dtnascimento" id="dtnascimento" max="<?= date("Y-m-d",time()) ?>" >
+                                </div>
+                                <div class="campo">
                                         <label for="email">Email:</label>
                                         <input type="text" id="email" name="email">
                                 </div>

@@ -15,10 +15,13 @@ if (empty($_POST) || !isset($_POST)) {
         }
 
 
-
         if (!$erro && !verificarCPF($cpf)) {
                 $erro .= "<li> CPF inválido. </li>";
         }
+
+        if(!validaData($_POST["dtnascimento"]) && !$erro){
+                $erro = "Data inválida";
+              }
 
         if (!$erro && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 $erro .= "<li> Envie o seu E-mail em um formato válido. Exemplo: usuario@gmail.com </li>";
@@ -65,12 +68,13 @@ if ($erro) {
         </html>
 <?php
 } else {
-        $sql_cadastrar = "INSERT INTO pessoa VALUES(0, :nome, :cpf, :email, :senha)";
+        $sql_cadastrar = "INSERT INTO pessoa VALUES(0, :nome, :cpf, :email, :senha, :dataNasc)";
         $stmt = $conn->prepare($sql_cadastrar);
         $stmt->bindValue(":nome", $nome);
         $stmt->bindValue(":cpf", $cpf);
         $stmt->bindValue(":email", $email);
         $stmt->bindValue(":senha", $senha);
+        $stmt->bindValue(":dataNasc", $dtnascimento);
         $stmt->execute();
 ?>
         <meta http-equiv="refresh" content="0; url=cadastroRealizado.php">
