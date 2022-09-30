@@ -39,23 +39,11 @@ CREATE TABLE `pessoa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
---
--- Índices para tabelas despejadas
---
 
---
--- Índices para tabela `pessoa`
---
 ALTER TABLE `pessoa`
   ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT de tabelas despejadas
---
 
---
--- AUTO_INCREMENT de tabela `pessoa`
---
 ALTER TABLE `pessoa`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
