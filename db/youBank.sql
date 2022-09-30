@@ -38,13 +38,6 @@ CREATE TABLE `pessoa` (
   `dataNasc` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Extraindo dados da tabela `pessoa`
---
-
-INSERT INTO `pessoa` (`id`, `nome`, `cpf`, `email`, `senha`, `dataNasc`) VALUES
-(1, 'Rômulo', '471.531.048-10', 'romulogoncalves13@gmail.com', '123', '2005-11-16'),
-(2, 'Rubeta', '471.531.048-10', 'rubeta@gmail.com', 'rubeta123', '1994-01-15');
 
 --
 -- Índices para tabelas despejadas
