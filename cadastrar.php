@@ -1,6 +1,6 @@
 <?php
 require "./lib/conn.php";
-include "./lib/verificacoes.php";
+require "./lib/verificacoes.php";
 $erro = false;
 if (empty($_POST) || !isset($_POST)) {
         $erro = "<li> Os campos do fomulário estão vazios</li>";
@@ -14,14 +14,10 @@ if (empty($_POST) || !isset($_POST)) {
                 }
         }
 
-
+        
         if (!$erro && !verificarCPF($cpf)) {
                 $erro .= "<li> CPF inválido. </li>";
         }
-
-        if(!validaData($_POST["dtnascimento"]) && !$erro){
-                $erro = "Data inválida";
-              }
 
         if (!$erro && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 $erro .= "<li> Envie o seu E-mail em um formato válido. Exemplo: usuario@gmail.com </li>";
